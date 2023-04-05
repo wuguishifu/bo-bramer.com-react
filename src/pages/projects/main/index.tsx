@@ -119,6 +119,7 @@ export default function ProjectsPage() {
                     </a>
                 </div>
             </div>
+            <div style={{height: '10vh'}}/>
         </div>
     );
 };

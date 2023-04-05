@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "bo-bramer.com",
+  "homepage": "https://bo-bramer.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

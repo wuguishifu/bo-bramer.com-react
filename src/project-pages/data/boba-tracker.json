@@ -8,19 +8,22 @@
             "index": 0,
             "title": "Boba Tracker",
             "content": "Boba Tracker is an app for tracking boba orders and spending. With the ability to set spending limits, Boba Tracker helps users budget themselves.",
-            "imageFooter": "boba/main.png"
+            "imageFooter": "boba/main.png",
+            "aspectRatio": 1.031389
         },
         {
             "index": 1,
             "title": "Adding Orders",
             "content": "Boba Tracker gives the option to manually add an order or to scan a receipt. Orders can be edited later on through the app.",
-            "imageFooter": "boba/add-order.png"
+            "imageFooter": "boba/add-order.png",
+            "aspectRatio": 1.031389
         },
         {
             "index": 2,
             "title": "Budgeting",
             "content": "Boba Tracker automatically logs and tracks daily and monthly spending. This data is securely saved on a Google Firebase Database and only accessible through the app.",
-            "imageFooter": "boba/budget.png"
+            "imageFooter": "boba/budget.png",
+            "aspectRatio": 1.031389
         }
     ],
     "footer": {

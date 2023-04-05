@@ -9,19 +9,22 @@
             "index": 0,
             "title": "Molecular",
             "content": "I built Molecular so that students studying chemistry would have a cheaper alternative to the thousand-dollar software typically used to view 3D molecules. While Molecular has less functionality than the standard applications used in universities, the ability to create and manipulate 3D structures makes it a good tool for those who can't afford expensive software but still are interested in visualizing molecules.",
-            "imageFooter": "molecular/benz-default.png"
+            "imageFooter": "molecular/benz-default.png",
+            "aspectRatio": 1.708
         },
         {
             "index": 1,
             "title": "Coloring",
             "content": "Molecular by default uses CPK coloring, but can be configured to use other color systems such as the emission spectra of each atom. The default CPK coloring is standard so that molecules can be recognized without labels.",
-            "imageFooter": "molecular/HCF.png"
+            "imageFooter": "molecular/HCF.png",
+            "aspectRatio": 1.708
         },
         {
             "index": 2,
             "title": "Atomic Information",
             "content": "Molecular has the capability to display molecular information such as identity and charge.",
-            "imageFooter": "molecular/SF6.png"
+            "imageFooter": "molecular/SF6.png",
+            "aspectRatio": 1.708
         },
         {
             "index": 3,
@@ -38,13 +41,15 @@
                 {
                     "imageFooter": "molecular/convergence.png"
                 }
-            ]
+            ],
+            "aspectRatio": 1.708
         },
         {
             "index": 4,
             "title": "Structural Analysis",
             "content": "Molecular can analyze structures and perform calculations such as finding bond angles.",
-            "imageFooter": "molecular/AA-angle.png"
+            "imageFooter": "molecular/AA-angle.png",
+            "aspectRatio": 1.708
         }
     ],
     "footer": {

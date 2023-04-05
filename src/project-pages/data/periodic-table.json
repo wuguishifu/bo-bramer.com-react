@@ -8,31 +8,36 @@
             "index": 0,
             "title": "Interactive Periodic Table",
             "content": "Very few good periodic tables exist online, and every one of them has downsides. Well-designed ones have poor interactivity, but the ones with clean and intuitive interactivity have poor, outdated designs. To change this, I built this interactive periodic table for my 501(c)(3) nonprofit, ChemTalk.",
-            "imageFooter": "ptable/default.png"
+            "imageFooter": "ptable/default.png",
+            "aspectRatio": 1.201325601
         },
         {
             "index": 1,
             "title": "Elemental Information",
             "content": "Fun facts and useful information is displayed when a user hovers over any element, making exploring the table fun and interesting. Each different tab displays a unique property, so it's very easy to locate information or compare elements.",
-            "imageFooter": "ptable/selection.png"
+            "imageFooter": "ptable/selection.png",
+            "aspectRatio": 1.201325601
         },
         {
             "index": 2,
             "title": "Periodic Trends",
             "content": "Multiple different periodic trends are visible on the periodic table, making it intuitive to see how the elements are organized. All colors gradients use a combination of hue and saturation to ensure ease of visibility even for those with color blindness.",
-            "imageFooter": "ptable/electronegativity.png"
+            "imageFooter": "ptable/electronegativity.png",
+            "aspectRatio": 1.201325601
         },
         {
             "index": 3,
             "title": "Vibrant Colors",
             "content": "In order to make this periodic table as intuitive as possible, vibrant colors were specifically chosen that easily display information. For example, the relative saturation of the red relates to the relative positive charge of the element.",
-            "imageFooter": "ptable/charge.png"
+            "imageFooter": "ptable/charge.png",
+            "aspectRatio": 1.201325601
         },
         {
             "index": 4,
             "title": "Development",
             "content": "I developed this interactive periodic table over the course of 2 months starting in May 2022. It went through multiple iterations, all of which were extensively tested by the ChemTalk team and schools around the world. I am constantly listening to feedback and adding new features to make this periodic table the best in the world. It is built primarily in JavaScript, HTML, and CSS.",
-            "imageFooter": "ptable/date.png"
+            "imageFooter": "ptable/date.png",
+            "aspectRatio": 1.201325601
         }
     ],
     "footer": {
