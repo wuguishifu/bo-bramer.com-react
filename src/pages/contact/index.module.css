@@ -39,6 +39,14 @@
     -webkit-animation-delay: 0.5s;
 }
 
+#link3 {
+    -webkit-animation-delay: 0.7s;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
 .link:hover {
     color: black;
 }

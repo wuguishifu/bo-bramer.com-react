@@ -2,7 +2,6 @@ import styles from './index.module.css';
 import Navbar from "../../components/navbar";
 import Chibi from '../../assets/chibi/chibi-reflected.png'
 import {useNavigate} from "react-router-dom";
-import resume from '../../assets/resume.pdf';
 
 const paths = [
     '/projects/periodic-table',
@@ -29,9 +28,6 @@ export default function HomePage() {
                     <div className={styles.paragraph}>Ask me about chemistry!</div>
                     <div style={{display: "flex", flexDirection: "row"}}>
                         <div className={styles.button} id={styles.button1} onClick={handleShowMe}>Show me something cool!</div>
-                    </div>
-                    <div style={{display: "flex", flexDirection: "row"}}>
-                        <a className={styles.button} id={styles.button2} href={resume} target={"_blank"}>Resume</a>
                     </div>
                 </div>
                 <div className={styles.column}>
