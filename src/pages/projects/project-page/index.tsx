@@ -51,7 +51,7 @@ function Section({content, styling}: { content: PageContent, styling: PageStylin
             <div className={styles.left}>
                 {content.index % 2 === 0 ?
                     <div className={(sectionVisible || hasAppeared) ? styles.imageAnimation : styles.transparent}>
-                        <div style={{width: '100%', border: '1px solid black', aspectRatio: content.aspectRatio}}>
+                        <div style={{width: '100%', aspectRatio: content.aspectRatio}}>
                             {content.carousel ?
                                 <Carousel pages={content.carousel.map(item => ({imageUrl: getImageUrl(item.imageFooter)}))}/> :
                                 <img className={styling.needsShadows ? classNames(styles.sectionImage, styles.shadow) : styles.sectionImage}
@@ -72,7 +72,7 @@ function Section({content, styling}: { content: PageContent, styling: PageStylin
                         <div className={`${styles.text} ${(sectionVisible || hasAppeared) ? styles.textAnimation : ''}`}>{content.content}</div>
                     </div> :
                     <div className={(sectionVisible || hasAppeared) ? styles.imageAnimation : styles.transparent}>
-                        <div style={{width: '100%', border: '1px solid black', aspectRatio: content.aspectRatio}}>
+                        <div style={{width: '100%', aspectRatio: content.aspectRatio}}>
                             {content.carousel ?
                                 <Carousel pages={content.carousel.map(item => ({imageUrl: getImageUrl(item.imageFooter)}))}/> :
                                 <img className={styling.needsShadows ? classNames(styles.sectionImage, styles.shadow) : styles.sectionImage}

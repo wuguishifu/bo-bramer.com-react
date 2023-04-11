@@ -16,7 +16,7 @@ html {
     flex-direction: column;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .projects-wrapper {
         margin-left: 12.5%;
         width: 75%;

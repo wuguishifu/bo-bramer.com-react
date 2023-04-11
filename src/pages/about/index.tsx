@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className={styles.content}>
             <Navbar showHome={true}/>
             <div className={styles.twoColumn}>
-                <div className={styles.column} style={{paddingLeft: '10%'}}>
+                <div className={styles.column} style={{paddingLeft: '10%', height: '100vh', justifyContent: 'center', display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
                     <div className={styles.title}>What's Poppin!</div>
                     <div className={styles.paragraph} id={styles.p1}>Hi! My name is <span className="blue">Bo Bramer</span>, and I'm a full-stack engineer with a degree in chemical
                         engineering from the University of California, Irvine. I like building websites and web applications for people around the
@@ -32,7 +32,7 @@ export default function AboutPage() {
                         </a>
                     </div>
                 </div>
-                <div className={styles.column}>
+                <div className={styles.column} style={{zIndex: -1}}>
                     <img className={styles.bo} src={bo} alt={'bo.png'}/>
                 </div>
             </div>
