@@ -64,7 +64,14 @@
     -webkit-animation-fill-mode: both;
     -webkit-animation-name: fade-in;
     -webkit-animation-duration: 1s;
+}
+
+#button1 {
     -webkit-animation-delay: 0.7s;
+}
+
+#button2 {
+    -webkit-animation-delay: 0.9s;
 }
 
 .button:hover {

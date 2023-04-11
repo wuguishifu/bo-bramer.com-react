@@ -1,6 +1,5 @@
 import styles from './index.module.css';
 import classNames from "classnames";
-import resume from './../../assets/resume.pdf';
 
 export default function Navbar({showHome}: { showHome: boolean }) {
     return (
@@ -12,7 +11,6 @@ export default function Navbar({showHome}: { showHome: boolean }) {
                 <a href={'/about'} className={classNames(styles.item, styles.padding)}>About</a>
                 <a href={'/projects'} className={classNames(styles.item, styles.padding)}>Projects</a>
                 <a href={'/contact'} className={classNames(styles.item, styles.padding)}>Contact</a>
-                <a href={resume} target={'_blank'} className={classNames(styles.item, styles.padding)}>Resume</a>
             </div>
         </div>
     );
