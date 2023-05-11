@@ -5,7 +5,9 @@ import ptableImage from '../../../assets/projects/ptable/display.png';
 import bobaTrackerImage from '../../../assets/projects/boba/default.png';
 import molecularImage from '../../../assets/projects/molecular/benz-default.png';
 import mujankImage from '../../../assets/projects/mujank/preview.png';
-import {useEffect} from "react";
+import iBoredImage from '../../../assets/projects/ibored/display.png';
+import applicoImage from '../../../assets/projects/applico/landing.png';
+import { useEffect } from "react";
 
 const elementVisible = -1000;
 
@@ -62,11 +64,11 @@ export default function ProjectsPage() {
     }
 
     return (
-        <div className={styles.content} style={{paddingTop: 100}}>
+        <div className={styles.content} style={{ paddingTop: 100 }}>
             <div className={styles.projectsWrapper}>
                 <div className={styles.projectRow}>
-                    <a className={classNames(styles.project, styles.projectHorizontal, styles.gradientBlue)} style={{width: '100%'}} id={styles.ptable}
-                       href={'/projects/periodic-table'}>
+                    <a className={classNames(styles.project, styles.projectHorizontal, styles.gradientBlue)} style={{ width: '100%' }} id={styles.ptable}
+                        href={'/projects/periodic-table'}>
                         <div className={styles.left}>
                             <div className={styles.text}>
                                 <h1 className={styles.header}>Interactive Periodic Table</h1>
@@ -76,26 +78,26 @@ export default function ProjectsPage() {
                             </div>
                         </div>
                         <div className={styles.right}>
-                            <img id={styles.ptableImage} src={ptableImage} alt={'ptable.png'} className={styles.image}/>
+                            <img id={styles.ptableImage} src={ptableImage} alt={'ptable.png'} className={styles.image} />
                         </div>
                     </a>
                 </div>
                 <div className={styles.projectRow}>
-                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientRed)} style={{width: '40%', height: 700, overflow: 'hidden'}}
-                       id={styles.boba} href={'/projects/boba-tracker'}>
+                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientRed)} style={{ width: '40%', height: 700, overflow: 'hidden' }}
+                        id={styles.boba} href={'/projects/boba-tracker'}>
                         <div className={styles.text}>
                             <h1 className={styles.header}>Boba Tracker</h1>
                             <p className={styles.description}>Boba Tracker is an app where a user can track their boba orders, get recommended drinks,
                                 and monitor their spending.</p>
                         </div>
-                        <img id={styles.bobaTrackerImage} src={bobaTrackerImage} alt={'boba.png'} className={styles.image}/>
+                        <img id={styles.bobaTrackerImage} src={bobaTrackerImage} alt={'boba.png'} className={styles.image} />
                     </a>
-                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientGreen)} style={{width: '57.5%', height: 700, overflow: 'hidden'}}
-                       id={styles.molecular} href={'/projects/molecular'}>
-                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '5%', marginBottom: '5%'}}>
-                            <img id={styles.molecularImage} src={molecularImage} alt={'molecular.png'} className={styles.image}/>
+                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientGreen)} style={{ width: '57.5%', height: 700, overflow: 'hidden' }}
+                        id={styles.molecular} href={'/projects/molecular'}>
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '5%', marginBottom: '5%' }}>
+                            <img id={styles.molecularImage} src={molecularImage} alt={'molecular.png'} className={styles.image} />
                         </div>
-                        <div className={styles.text} style={{justifyContent: 'flex-start'}}>
+                        <div className={styles.text} style={{ justifyContent: 'flex-start' }}>
                             <h1 className={styles.header}>Molecular</h1>
                             <p className={styles.description}>Molecular is a 3D molecule modeling program where users can build and manipulate
                                 molecular
@@ -104,8 +106,8 @@ export default function ProjectsPage() {
                     </a>
                 </div>
                 <div className={styles.projectRow}>
-                    <a className={classNames(styles.project, styles.projectHorizontal, styles.gradientBlurple)} style={{width: '100%'}}
-                       id={styles.mujank} href={'/projects/mujank'}>
+                    <a className={classNames(styles.project, styles.projectHorizontal, styles.gradientBlurple)} style={{ width: '100%' }}
+                        id={styles.mujank} href={'/projects/mujank'}>
                         <div className={styles.left}>
                             <div className={styles.text}>
                                 <h1 className={styles.header}>Mujank</h1>
@@ -114,12 +116,32 @@ export default function ProjectsPage() {
                             </div>
                         </div>
                         <div className={styles.right}>
-                            <img id={styles.mujankImage} src={mujankImage} alt={'mujank.png'} className={styles.image}/>
+                            <img id={styles.mujankImage} src={mujankImage} alt={'mujank.png'} className={styles.image} />
                         </div>
                     </a>
                 </div>
+                <div className={styles.projectRow}>
+                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientRed)} style={{ width: '57.5%', height: 700, overflow: 'hidden' }}
+                        id={styles.molecular} href={'/projects/applico'}>
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '5%', marginBottom: '5%' }}>
+                            <img id={styles.applicoImage} src={applicoImage} alt={'molecular.png'} className={styles.image} />
+                        </div>
+                        <div className={styles.text} style={{ justifyContent: 'flex-start' }}>
+                            <h1 className={styles.header} style={{ margin: 0, paddingBottom: 8 }}>Applico</h1>
+                            <p className={styles.description}>Applico is a web application that uses column-based organization for users to easily manage their job applications.</p>
+                        </div>
+                    </a>
+                    <a className={classNames(styles.project, styles.projectVertical, styles.gradientBlue)} style={{ width: '40%', height: 700, overflow: 'hidden' }}
+                        id={styles.boba} href={'/projects/ibored'}>
+                        <div className={styles.text}>
+                            <h1 className={styles.header}>iBored</h1>
+                            <p className={styles.description}>iBored is a cross-platform mobile app where users can connect with friends and easily organize events without the hassle of planning.</p>
+                        </div>
+                        <img id={styles.bobaTrackerImage} src={iBoredImage} alt={'boba.png'} className={styles.image} />
+                    </a>
+                </div>
             </div>
-            <div style={{height: '10vh'}}/>
+            <div style={{ height: '10vh' }} />
         </div>
     );
 };

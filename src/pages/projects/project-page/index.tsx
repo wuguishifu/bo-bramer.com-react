@@ -1,10 +1,10 @@
 import styles from './index.module.css';
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import projectPages from "../../../project-pages";
 import classNames from "classnames";
 import getImageUrl from "../../../project-pages/images";
 import Carousel from "../../../components/carousel";
-import {useRef} from "react";
+import { useRef } from "react";
 import useOnScreen from "../../../hooks/useOnScreen";
 
 interface PageContent {
@@ -26,19 +26,19 @@ interface PageStyling {
 }
 
 export default function ProjectPage() {
-    const {project} = useParams();
+    const { project } = useParams();
     // @ts-ignore
     const data = projectPages[project];
 
     return (
         <div className={styles.content}>
-            {data.pages.map((page: PageContent) => <Section content={page} styling={data.styling}/>)}
-            {<Footer content={data.footer} styling={data.styling}/>}
+            {data.pages.map((page: PageContent) => <Section content={page} styling={data.styling} />)}
+            {<Footer content={data.footer} styling={data.styling} />}
         </div>
     );
 };
 
-function Section({content, styling}: { content: PageContent, styling: PageStyling }) {
+function Section({ content, styling }: { content: PageContent, styling: PageStyling }) {
     const sectionRef = useRef(null);
     const [sectionVisible, hasAppeared] = useOnScreen(sectionRef);
 
@@ -51,11 +51,11 @@ function Section({content, styling}: { content: PageContent, styling: PageStylin
             <div className={styles.left}>
                 {content.index % 2 === 0 ?
                     <div className={(sectionVisible || hasAppeared) ? styles.imageAnimation : styles.transparent}>
-                        <div style={{width: '100%', aspectRatio: content.aspectRatio}}>
+                        <div style={{ width: '100%', aspectRatio: content.aspectRatio }}>
                             {content.carousel ?
-                                <Carousel pages={content.carousel.map(item => ({imageUrl: getImageUrl(item.imageFooter)}))}/> :
+                                <Carousel pages={content.carousel.map(item => ({ imageUrl: getImageUrl(item.imageFooter) }))} /> :
                                 <img className={styling.needsShadows ? classNames(styles.sectionImage, styles.shadow) : styles.sectionImage}
-                                     src={getImageUrl(content.imageFooter)} alt={content.imageFooter}/>
+                                    src={getImageUrl(content.imageFooter)} alt={content.imageFooter} />
                             }
                         </div>
                     </div> :
@@ -72,11 +72,11 @@ function Section({content, styling}: { content: PageContent, styling: PageStylin
                         <div className={`${styles.text} ${(sectionVisible || hasAppeared) ? styles.textAnimation : ''}`}>{content.content}</div>
                     </div> :
                     <div className={(sectionVisible || hasAppeared) ? styles.imageAnimation : styles.transparent}>
-                        <div style={{width: '100%', aspectRatio: content.aspectRatio}}>
+                        <div style={{ width: '100%', aspectRatio: content.aspectRatio }}>
                             {content.carousel ?
-                                <Carousel pages={content.carousel.map(item => ({imageUrl: getImageUrl(item.imageFooter)}))}/> :
+                                <Carousel pages={content.carousel.map(item => ({ imageUrl: getImageUrl(item.imageFooter) }))} /> :
                                 <img className={styling.needsShadows ? classNames(styles.sectionImage, styles.shadow) : styles.sectionImage}
-                                     src={getImageUrl(content.imageFooter)} alt={content.imageFooter}/>
+                                    src={getImageUrl(content.imageFooter)} alt={content.imageFooter} />
                             }
                         </div>
                     </div>
@@ -92,7 +92,7 @@ interface Footer {
     buttonUrl: string;
 }
 
-function Footer({content, styling}: { content: Footer, styling: PageStyling }) {
+function Footer({ content, styling }: { content: Footer, styling: PageStyling }) {
     const footerRef = useRef(null);
     const [footerVisible, hasAppeared] = useOnScreen(footerRef);
 
@@ -106,14 +106,14 @@ function Footer({content, styling}: { content: Footer, styling: PageStyling }) {
                 <div className={styles.footerText}>
                     <div className={`${styles.title} ${(footerVisible || hasAppeared) ? styles.footerTextAnimation : ''}`}>Want to see more?</div>
                     <div className={`${styles.text} ${(footerVisible || hasAppeared) ? styles.footerTextAnimation : ''}`}>{content.blurb}</div>
-                    <div className={`${styles.buttonHolder} ${(footerVisible || hasAppeared) ? styles.footerAnimation : styles.transparent}`}>
+                    {content.buttonUrl && <div className={`${styles.buttonHolder} ${(footerVisible || hasAppeared) ? styles.footerAnimation : styles.transparent}`}>
                         <a className={styles.buttonRoundedSecondary} href={content.buttonUrl} target={"_blank"}>Click me!</a>
-                    </div>
+                    </div>}
                 </div>
             </div>
             <div className={`${styles.right} ${(footerVisible || hasAppeared) ? styles.footerAnimation : styles.transparent}`}>
-                <img className={styles.footerImage} style={{backgroundColor: 'white'}} src={getImageUrl(content.imageFooter)}
-                     alt={content.imageFooter}/>
+                <img className={styles.footerImage} style={{ backgroundColor: 'white' }} src={getImageUrl(content.imageFooter)}
+                    alt={content.imageFooter} />
             </div>
         </div>
     );

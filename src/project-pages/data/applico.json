@@ -1,0 +1,47 @@
+{
+    "styling": {
+        "colorScheme": "gradient-red",
+        "numPages": 5
+    },
+    "pages": [
+        {
+            "index": 0,
+            "title": "Applico",
+            "content": "Applico is a website that uses a column based organizational approach to let users easily create and manage their job applications",
+            "imageFooter": "applico/landingpage.png",
+            "aspectRatio": 1.46
+        },
+        {
+            "index": 1,
+            "title": "Straightforward Tracking",
+            "content": "Easily track the status of your applications uing the different columns on the dashboard",
+            "imageFooter": "applico/tracker.png",
+            "aspectRatio": 1.46
+        },
+        {
+            "index": 2,
+            "title": "Editing",
+            "content": "Easily edit each application to update its relevant information, status, and notes",
+            "imageFooter": "applico/edit.png",
+            "aspectRatio": 1.46
+        },
+        {
+            "index": 3,
+            "title": "Keeping track of tasks",
+            "content": "Manage your day-to-day tasks using the to-do tab",
+            "imageFooter": "applico/to-do.png",
+            "aspectRatio": 1.46
+        },
+        {
+            "index": 4,
+            "title": "Calendar",
+            "content": "See what's coming up in the calendar tab",
+            "imageFooter": "applico/calendar.png",
+            "aspectRatio": 1.46
+        }
+    ],
+    "footer": {
+        "blurb": "Applico is currently in closed beta, but check back soon for more information!",
+        "imageFooter": "applico/icon.png"
+    }
+}

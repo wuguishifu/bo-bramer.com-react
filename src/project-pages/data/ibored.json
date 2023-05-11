@@ -1,0 +1,33 @@
+{
+    "styling": {
+        "colorScheme": "gradient-blue",
+        "numPages": 3
+    },
+    "pages": [
+        {
+            "index": 0,
+            "title": "iBored",
+            "content": "iBored is a cross-platform social media app that allows users to connect with each other and easily organize small activities and group events",
+            "imageFooter": "ibored/main.png",
+            "aspectRatio": 1
+        },
+        {
+            "index": 1,
+            "title": "Friends",
+            "content": "Easily add and organize friends. Seamlessly create chats with friends and groups of friends",
+            "imageFooter": "ibored/friends.png",
+            "aspectRatio": 1
+        },
+        {
+            "index": 2,
+            "title": "Customization",
+            "content": "Easily customize your profile and the types of notifications you get",
+            "imageFooter": "ibored/posts and notifications.png",
+            "aspectRatio": 1
+        }
+    ],
+    "footer": {
+        "blurb": "iBored is currently in closed beta, but check back soon for more information!",
+        "imageFooter": "ibored/ibored.png"
+    }
+}
