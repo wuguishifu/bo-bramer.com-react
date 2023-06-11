@@ -4,6 +4,7 @@ stdin.setEncoding('utf8');
 import { execSync } from 'child_process';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import { config } from 'dotenv';
+import mime from 'mime';
 import fs from 'fs';
 config();
 
@@ -46,6 +47,7 @@ const keypress = async () => new Promise(resolve => process.stdin.once('data', d
                 Bucket: bucketName,
                 Key: bucketPath,
                 Body: fs.readFileSync(filePath),
+                ContentType: mime.getType(filePath),
             })).then(() => {
                 console.log('uploaded', filePath);
                 resolve();
